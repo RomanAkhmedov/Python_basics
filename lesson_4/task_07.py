@@ -11,7 +11,7 @@ def fact(n):
     (либо одного из целочисленных параметров, предшествующих передаваемому параметру)
     """
     try:
-        if n is not int(n):
+        if n % 1 != 0:
             raise TypeError
         base = 1
         for i in range(1, n + 1):
